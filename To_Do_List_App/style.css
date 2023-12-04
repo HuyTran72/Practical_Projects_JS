@@ -65,3 +65,24 @@ button {
     background-color: #0a9c11;
     border-radius: 10px;
 }
+
+button:hover {
+    background-color: #068051;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50% ;
+    background: url(img/unchecked.png);
+}
+
+ul li.checked {
+
+}
+
+ul li.checked::before {
+
+}
