@@ -11,8 +11,23 @@ function addTask() {
     }
 
     inputBox.value = "";
+    saveTask();
 }
+
+listContainer.addEventListener("click", function(e) {
+
+    if(e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+        saveTask();
+    }
+}) 
 
 function saveTask() {
     localStorage.setItem("data", listContainer.innerHTML);
 }
+
+function showTask() {
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+
+showTask();
