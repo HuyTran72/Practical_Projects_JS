@@ -50,4 +50,20 @@ body {
 
 .tool {
     background-color: #222831;
+    color: #fff;
+    padding: 5px ;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.tool i {
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+
+.tool i:hover {
+    color: #aca1a1;
 }
